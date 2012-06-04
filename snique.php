@@ -15,7 +15,7 @@ class snique
 		$uri = $_SERVER['REQUEST_URI'];
 		$images_prefix = site_url('/%07images/');
 		$prefix_len = strlen($images_prefix);
-		if ( strncmp($uri, $images_prefix, $prefix_len) == 0 ))
+		if ( strncmp($uri, $images_prefix, $prefix_len) == 0 )
 		{
 			add_action('init', array(&$this, 'send_attachment_if_necessary'),1,0);
 		}
